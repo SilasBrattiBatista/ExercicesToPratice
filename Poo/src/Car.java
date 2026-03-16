@@ -41,7 +41,7 @@ public class Car {
         return this.mediumPrice;
     }
 
-    public void setMediumPrice(double mediumPrice) {
+    public void setMediumPrice() {
 
         if (this.year2022) {
             this.mediumPrice = 32.000;
@@ -52,5 +52,11 @@ public class Car {
         } else  {
             System.out.println("It's a invalid year Model");
         }
+    }
+
+    public void showInfos() {
+        System.out.println("Model: " + this.modelName);
+        System.out.println("Year 2022: " + this.year2022);
+        System.out.println("Medium Price: " + this.mediumPrice );
     }
 }

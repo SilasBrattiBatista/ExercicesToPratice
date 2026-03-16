@@ -39,7 +39,7 @@ public class Student {
     }
 
     public double media() {
-        double media = ((gradeOne + gradeTwo + gradeThree) / 3;
+        double media = ((gradeOne + gradeTwo + gradeThree) / 3);
         return media;
     }
 }
