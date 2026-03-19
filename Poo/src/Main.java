@@ -7,12 +7,13 @@ create specific instances, using it in the main class to set prices and display 
 
 public class Main {
     public static void main(String[] args) {
-        ModelCar unoMille = new ModelCar();
-        unoMille.setModelName("Uno Mille");
-        unoMille.setYear2022(true);
-        unoMille.setMediumPrice();
+        Cat cat = new Cat();
+        Dog  dog = new Dog();
 
-        unoMille.showInfos();
+        cat.setName("Brown");
+        cat.scratchFurniture();
 
+        dog.setName("Brown");
+        dog.emitSound();
     }
 }
