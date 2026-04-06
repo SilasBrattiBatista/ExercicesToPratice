@@ -5,15 +5,30 @@ create specific instances, using it in the main class to set prices and display 
 */
 
 
+import Person.Person;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog  dog = new Dog();
+        ArrayList<Person> listOfPeople = new ArrayList<>();
+        Person personOne = new Person();
+        personOne.setName("John Doe");
+        personOne.setAge(30);
 
-        cat.setName("Brown");
-        cat.scratchFurniture();
+        Person personTwo = new Person();
+        personTwo.setName("Jane Doe");
+        personTwo.setAge(30);
 
-        dog.setName("Brown");
-        dog.emitSound();
+        Person personThree = new Person();
+        personThree.setName("Jane Doe");
+        personThree.setAge(30);
+
+        listOfPeople.add(personOne);
+        listOfPeople.add(personTwo);
+        listOfPeople.add(personThree);
+
+        System.out.println(listOfPeople.size());
+        System.out.println(listOfPeople.get(0));
+        System.out.println(listOfPeople.toString());
     }
 }
