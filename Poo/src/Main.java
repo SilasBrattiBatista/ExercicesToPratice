@@ -4,8 +4,7 @@ average prices for each year, and calculate and display the lowest and highest p
 create specific instances, using it in the main class to set prices and display information.*
 */
 
-
-import Person.Person;
+import person.Person;
 import java.util.ArrayList;
 
 public class Main {
